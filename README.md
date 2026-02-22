@@ -114,8 +114,6 @@
 - **Final Test RMSE:** ~44,139
 - **95% CI for Test RMSE:** ~[22,480, 58,234]
 
-> Results may vary depending on train/test split, tuning settings, and feature engineering choices. SHAP visualizations may also vary depending on the model version and sample used for explanation.
-
 **Tech Stack**
 - Python
 - Jupyter Notebook
