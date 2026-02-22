@@ -129,7 +129,6 @@
 **Repository Structure**
 - `notebooks/INSY674_End_to_End_Energy_CO2.ipynb` — main notebook
 - `data/global-data-on-sustainable-energy.csv` — dataset
-- 'notebooks/INSY674_Assignment2_VanshikaSapra_clean.ipynb' - SHAP / interpretability analysis notebook
 - `README.md`
 - `.gitignore`
 
