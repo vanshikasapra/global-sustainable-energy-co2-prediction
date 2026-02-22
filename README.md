@@ -1,11 +1,11 @@
 **End-to-End Energy CO2 Regression ML Project**
 
 **Project Overview**
-- End-to-end machine learning regression project in **Python**
-- Predicts **country-level annual CO2 emissions**
-- Built using a **global sustainable energy dataset**
-- Implemented in **Jupyter Notebook** with **scikit-learn pipelines**
-- Includes **model interpretability** using **SHAP** and **feature importance analysis**
+- End-to-end machine learning regression project in Python
+- Predicts country-level annual CO2 emissions
+- Built using a global sustainable energy dataset
+- Implemented in Jupyter Notebook with scikit-learn pipelines
+- Includes model interpretability using SHAP and feature importance analysis
 
 **Objective**
 - Predict target variable:
@@ -85,22 +85,22 @@
 - Focus on improving Random Forest performance
 
 **9) Feature Importance + SHAP (Interpretability)**
-- Added a dedicated **Feature Importance + SHAP** section in the notebook
+- Added a dedicated Feature Importance + SHAP section in the notebook
 - Imported and used:
   - `shap`
   - `RandomForestRegressor`
   - `permutation_importance` (scikit-learn)
   - `BaseSRegressor` from `causalml` (for additional interpretation workflow)
 - Attempted built-in CausalML feature importance using `model_s.get_importance()` inside a `try/except` block
-- Computed **permutation importance** on the trained Random Forest model using:
+- Computed permutation importance on the trained Random Forest model using:
   - `permutation_importance(rf, X_test, y_test, random_state=42)`
 - Created and plotted top feature importances (top 20)
-- Applied **SHAP** with:
+- Applied SHAP with:
   - `explainer = shap.Explainer(rf, X_train)`
   - `shap_values = explainer(X_test[:200])`
   - `shap.summary_plot(shap_values, X_test[:200], show=True)`
 - Used `try/except` handling for SHAP execution to make the notebook robust if SHAP is unavailable or fails in some environments
-- This adds **explainability** by showing how features impact model predictions, beyond just reporting RMSE
+- This adds explainability by showing how features impact model predictions, beyond just reporting RMSE
 
 **10) Final Testing**
 - Evaluate final tuned model on held-out test set
